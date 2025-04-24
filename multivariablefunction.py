@@ -1,10 +1,7 @@
 import random
 import numpy as np
 import sympy as sp
-import time
-from sympy.vector import CoordSys3D, Vector
 from multiprocessing import Pool  
-Coord = CoordSys3D('Coord')
 a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z = sp.symbols('a b c d e f g h i j k l m n o p q r s t u v w x y z')
 
 def main():
