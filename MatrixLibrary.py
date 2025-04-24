@@ -40,13 +40,3 @@ class MatrixLibrary:
                 [uy * ux * (1 - cos_theta) + uz * sin_theta, cos_theta + uy**2 * (1 - cos_theta), uy * uz * (1 - cos_theta) - ux * sin_theta],
                 [uz * ux * (1 - cos_theta) - uy * sin_theta, uz * uy * (1 - cos_theta) + ux * sin_theta, cos_theta + uz**2 * (1 - cos_theta)]
             ])
-
-    
-    def Translation_matrix(self, dx, dy, dz):
-        """Create a 3D translation matrix."""
-        return np.array([
-        [1, 0, 0, dx],
-        [0, 1, 0, dy],
-        [0, 0, 1, dz],
-        [0, 0, 0, 1]
-        ])
