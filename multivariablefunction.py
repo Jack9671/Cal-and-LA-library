@@ -69,7 +69,7 @@ class MultivariableFunction:
                                              , hypershperical_constraint: float
                                              , density_1D: int 
                                              ,num_of_cores: int = 8
-                                             ,verbose: bool = False)-> np.ndarray:
+                                             ,verbose: bool = False)-> np.ndarray: #Gradient Ascent and Descent
         # Create a list of parameters for each set of points
         initial_points = MultivariableFunction._set_of_point_generator(len(self.independent_vars),
                                                                         hypershperical_constraint,
