@@ -24,7 +24,7 @@ class MultivariableFunction:
         self.directional_diff = MultivariableFunction.directional_diff(self, direction_vect)
 
 
-    def scalar_line_integral(self, r: "VectorFieldFunction", start_time: float, end_time: float, verbose = False)-> int|float: # type: ignore
+    def scalar_line_integral(self, r: "VectorFieldFunction", start_time: float, end_time: float, verbose = False)-> int|float: 
         #Formula: ∫_c f(x1,x2,x3,...,xn)dx = ∫f(r_x1(t), r_x2(t), r_x3(t),..., r_xn(t))||r'(t)||dt from start_time to end_time
         #where r(t) = [r_x1(t), r_x2(t), r_x3(t),..., r_xn(t)]
         #Step 1: sub x1 = r_x1(t), x2 = r_x2(t), x3 = r_x3(t),..., xn = r_xn(t) into f(x1,x2,x3,...,xn) to get f(t)
